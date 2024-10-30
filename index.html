@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arquitectura de la información</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="aguila_favicon.png" type="image/png">
+</head>
+<body>
+    <div class="menu">
+        <header><img src="logo1.png" alt="logo"></header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#especies">Especies</a>
+            <a href="#habitat">Hábitat</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contactanos">Contacto</a>
+        </nav>
+    </div>
+    <main>
+        <section id="inicio">
+            <div id="caja-home">
+                <div id="texto-home">
+                    <p>Gafas VR</p>
+                    <p>Realidad Virtual</p>
+                </div>
+                <div id="foto-home">
+                    <img src="gafas-rv.png" alt="gafas realidad virtual">
+                </div>
+                
+            </div>
+            <button id="boton-home">Descargar</button>
+        </section>
+        <section id="sponsors">
+            <h2>Nuestros Sponsors</h2>
+            <div id="div-sponsors">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <section id="equipo"> 
+            <h2>Nuestro equipo</h2> 
+            <div class="div-caja"> 
+                <div class="miembro"> 
+                    <img src="paco.png" alt="Foto de Paco Pico"> 
+                    <h3>Paco Pico</h3> 
+                    <p>aa</p> 
+                </div> 
+                <div class="miembro"> 
+                    <img src="ana.png" alt="Foto de Ana Serrano"> 
+                    <h3>Ana Serrano</h3>
+                    <p>aaa</p>
+                 </div> 
+                 <div class="miembro"> 
+                    <img src="marcos.png" alt="Foto de Marcos Gutierrez"> 
+                    <h3>Marcos Gutierrez</h3> 
+                    <p>aa</p> 
+                </div> 
+                </div> 
+            </section>
+        <section id="contactanos">
+            <h2>Contactanos</h2><br>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+    
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="asunto">Asunto:</label><br>
+                <input type="text" id="asunto" name="asunto" required><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+    
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Águilas</p>
+    </footer>
+</body>
+</html>

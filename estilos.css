@@ -1,0 +1,122 @@
+*{
+    background-color: white;
+}
+#caja-home{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#boton-home{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu img{
+    width: 10%;
+    height: auto;
+    max-width: 100px;
+    min-width: 50px
+}
+nav {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5%;
+}
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+.div-caja div p{
+    color: rgb(97, 94, 94);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+img{
+    width: 100%;
+    height: 75vh;
+    border-radius: 5%;
+}
+#sponsors{
+    text-align: center;
+}
+#equipo{
+    text-align: center;
+}
+.div-caja{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    
+}
+.div-caja div{
+    flex: 1; /* Ajusta todas las imagenes de tamaño */
+    margin: 2%;
+}
+#div-1, #div-2,#div-3{
+    background-color: rgb(196, 193, 193);
+    border-radius: 8%;
+}
+.div-caja img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.div-caja p{
+    text-align: justify;
+}
+#contactanos{
+    padding-top: 1%;
+    color: #645d5d;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #807d7d;
+}
+input, textarea{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#enviar{
+    width: 70%;
+    padding: 12px;
+    background-color: #2a2b2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+footer{
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
