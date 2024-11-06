@@ -1,87 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Arquitectura de la información</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="aguila_favicon.png" type="image/png">
 </head>
 <body>
-    <div class="menu">
-        <header><img src="logo1.png" alt="logo"></header>
+    <header>
+        <div class="logo">
+            <img src="logo1.png" alt="Logo de la empresa">
+        </div>
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#especies">Especies</a>
-            <a href="#habitat">Hábitat</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contactanos">Contacto</a>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Tienda</a></li>
+                <li><a href="">Suscripciones</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
         </nav>
-    </div>
+        <div class="menu-derecho">
+            <a href=""><img src="login.png" alt="Inicio Sesion"></a>
+            <a href=""><img src="carrito.png" alt="Carrito"></a>
+        </div>
+    </header>
     <main>
-        <section id="inicio">
-            <div id="caja-home">
-                <div id="texto-home">
-                    <p>Gafas VR</p>
-                    <p>Realidad Virtual</p>
-                </div>
-                <div id="foto-home">
-                    <img src="gafas-rv.png" alt="gafas realidad virtual">
-                </div>
-                
-            </div>
-            <button id="boton-home">Descargar</button>
-        </section>
-        <section id="sponsors">
-            <h2>Nuestros Sponsors</h2>
-            <div id="div-sponsors">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <section class="home">
+            <div class="home-texto">
+                <h1>Gafas VR</h1>
+                <h2>REALIDAD VIRTUAL</h2>
+                <button class="boton-home">Descargar</button>
             </div>
         </section>
+
+        <section class="suscripciones"> 
+            <h2>Planes de Suscripción</h2> 
+            <div class="suscripciones-div"> 
+                <div class="caja"> 
+                    <h3>Básica</h3> 
+                    <p>€19.99/mes</p> 
+                    <ul> 
+                        <li>Actualizaciones de software</li> 
+                        <li>Soporte técnico estándar</li> 
+                        <li>Descuentos en productos seleccionados</li> 
+                    </ul> 
+                    <button>Suscribirse</button> 
+                </div> <div class="caja"> 
+                    <h3>Premium</h3> 
+                    <p>€49.99/mes</p> 
+                    <ul> 
+                        <li>Todo lo de Básica</li> 
+                        <li>Acceso a contenido exclusivo</li> 
+                        <li>Actualizaciones prioritarias</li> 
+                        <li>Soporte prioritario</li> 
+                    </ul> 
+                    <button>Suscribirse</button> 
+                </div> 
+                <div class="caja"> 
+                    <h3>Profesional</h3> 
+                    <p>€99.99/mes</p> 
+                    <ul> 
+                        <li>Todo lo de Premium</li> 
+                        <li>Acceso a cursos de capacitación</li> 
+                        <li>Webinars exclusivos</li> 
+                        <li>Consultoría personalizada</li> 
+                    </ul> <button>Suscribirse</button> 
+                </div> 
+                <div class="caja"> 
+                    <h3>Empresarial</h3> 
+                    <p>€199.99/mes</p> 
+                    <ul> 
+                        <li>Todo lo de Profesional</li> 
+                        <li>Desarrollo y personalización de software</li> 
+                        <li>Soporte 24/7</li> 
+                        <li>Almacenamiento en la nube</li> 
+                    </ul> 
+                <button>Suscribirse</button>
+        </section>
+
+
         <section id="equipo"> 
             <h2>Nuestro equipo</h2> 
             <div class="div-caja"> 
                 <div class="miembro"> 
-                    <img src="paco.png" alt="Foto de Paco Pico"> 
+                    <img src="miembro1.jpg" alt="Foto de Paco Pico"> 
                     <h3>Paco Pico</h3> 
-                    <p>aa</p> 
+                    <p>Lidera el equipo de desarrollo de software, supervisando la integración de nuevas tecnologías en las aplicaciones de realidad virtual.</p> 
                 </div> 
                 <div class="miembro"> 
-                    <img src="ana.png" alt="Foto de Ana Serrano"> 
+                    <img src="miembro3.jpg" alt="Foto de Ana Serrano"> 
                     <h3>Ana Serrano</h3>
-                    <p>aaa</p>
+                    <p>Desarrolla algoritmos avanzados de IA que permiten experiencias personalizadas y adaptativas en VR.</p>
                  </div> 
                  <div class="miembro"> 
-                    <img src="marcos.png" alt="Foto de Marcos Gutierrez"> 
+                    <img src="miembro2.jpg" alt="Foto de Marcos Gutierrez"> 
                     <h3>Marcos Gutierrez</h3> 
-                    <p>aa</p> 
+                    <p>Diseña interfaces intuitivas que mejoran la experiencia de usuario en entornos de realidad virtual.</p> 
                 </div> 
-                </div> 
-            </section>
-        <section id="contactanos">
-            <h2>Contactanos</h2><br>
-            <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-    
-                <label for="email">Correo Electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                
-                <label for="asunto">Asunto:</label><br>
-                <input type="text" id="asunto" name="asunto" required><br>
+            </div> 
+        </section>
 
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-    
-                <button id="enviar" type="submit">Enviar</button>
-            </form>
+        <section  class="patrocinadores">
+            <h2>Patrocinadores</h2>
+            <div class="sponsors-caja">
+                <div class="sponsor">
+                    <img src="BBVA.png" alt="Bbva">
+                </div>
+                <div class="sponsor">
+                    <img src="el_corte_ingles.png" alt="El Corte Inglés">
+                </div>
+                <div class="sponsor">
+                    <img src="bankia.png" alt="Bankia">
+                </div>
+                <div class="sponsor">
+                    <img src="game.png" alt="Game">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Águilas</p>
+        <p><b>&copy; 2024 Game</b></p>
     </footer>
 </body>
 </html>
